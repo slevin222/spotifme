@@ -1,0 +1,19 @@
+.aggregate{
+  display: inline-block;
+  width:  50%;
+  text-align: center;
+
+}
+
+.filter{
+  text-align: center;
+}
+
+.App-title{
+  text-align: center;
+}
+
+.playlists{
+  width: 25%;
+  display: inline-block;
+}

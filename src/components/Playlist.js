@@ -8,7 +8,7 @@ class Playlist extends Component {
         let playlist = this.props.playlists;
         return (
             <div className="playlists">
-                <img />
+                {/* <img /> */}
                 <h3>{playlist.name}</h3>
                 <ul>
                     {playlist.songs.map(song =>

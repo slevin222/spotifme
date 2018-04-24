@@ -51,31 +51,37 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      serverData: fakeServerData
+      serverData: fakeServerData,
+      filterString: ''
     }
   }
 
-  // componentDidMount() {
-  //   this.setState({
-  //     serverData: fakeServerData
-  //   })
-  // }
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        serverData: fakeServerData
+      })
+    }, 1000);
+  }
 
   render() {
-    let playlistData = this.state.serverData.user.playlists;
+    let showPlaylist = this.state.serverData.user ? this.state.serverData.user.playlists.filter(playlist =>
+
+      playlist.name.toLowerCase().includes(this.state.filterString.toLowerCase())) : [];
 
     return (
-      <div className="App">
-        {this.state.serverData.user ?
-          <div>
-            <h1 className="App-title">{this.state.serverData.user && this.state.serverData.user.name}'s Playlist</h1>
-            <PlaylistCounter playlists={playlistData} />
-            <HoursCounter playlists={playlistData} />
-            <Filter />
-            {playlistData.map(playlist =>
-              <Playlist playlists={playlist} />
-            )}
-          </div> : <h1>Loading .....</h1>
+      <div className="App" >
+        {
+          this.state.serverData.user ?
+            <div>
+              <h1 className="App-title">{this.state.serverData.user.name}'s Playlist</h1>
+              <PlaylistCounter playlists={showPlaylist} />
+              <HoursCounter playlists={showPlaylist} />
+              <Filter onTextChange={text => this.setState({ filterString: text })} />
+              {showPlaylist.map(playlist =>
+                <Playlist playlists={playlist} />
+              )}
+            </div> : <h1>Loading .....</h1>
         }
       </div>
     );

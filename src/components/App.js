@@ -18,7 +18,7 @@ let fakeServerData = {
           { name: 'Fire', duration: 1236 },
           { name: 'Trouble will find me now', duration: 70000 }
         ]
-      },
+      }
     ]
   }
 };
@@ -90,7 +90,7 @@ class App extends Component {
                 : 'https://better-playlists-backend.herokuapp.com/login'
             }
             }
-              style={{ padding: '20px', 'font-size': '50px', 'margin-top': '20px' }}>Sign in with Spotify</button>
+              style={{ padding: '20px', 'fontSize': '50px', 'marginTop': '20px' }}>Sign in with Spotify</button>
         }
       </div>
     );

@@ -19,30 +19,6 @@ let fakeServerData = {
           { name: 'Trouble will find me now', duration: 70000 }
         ]
       },
-      {
-        name: 'Discover Weekly',
-        songs: [
-          { name: 'Dogs Running', duration: 1345 },
-          { name: 'Fire', duration: 1236 },
-          { name: 'Trouble will find me now', duration: 70000 }
-        ]
-      },
-      {
-        name: 'The Best!',
-        songs: [
-          { name: 'Hello World', duration: 1345 },
-          { name: 'Fire', duration: 1236 },
-          { name: 'Trouble will find me now', duration: 70000 }
-        ]
-      },
-      {
-        name: 'Playlist - Now!',
-        songs: [
-          { name: 'EZ does it', duration: 1345 },
-          { name: 'Fire', duration: 1236 },
-          { name: 'Trouble will find me now', duration: 70000 }
-        ]
-      }
     ]
   }
 };

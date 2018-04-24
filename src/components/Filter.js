@@ -7,7 +7,7 @@ class Filter extends Component {
     render() {
         return (
             <div className="filter">
-                <img />
+                {/* <img /> */}
                 <input type="text" onKeyUp={event =>
                     this.props.onTextChange(event.target.value)} />
                 Filter

@@ -21,15 +21,15 @@ let fakeServerData = {
       {
         name: 'Discover Weekly',
         songs: [
-          { name: 'Beat It', duration: 1345 },
+          { name: 'Dogs Running', duration: 1345 },
           { name: 'Fire', duration: 1236 },
           { name: 'Trouble will find me now', duration: 70000 }
         ]
       },
       {
-        name: 'The best!',
+        name: 'The Best!',
         songs: [
-          { name: 'Beat It', duration: 1345 },
+          { name: 'Hello World', duration: 1345 },
           { name: 'Fire', duration: 1236 },
           { name: 'Trouble will find me now', duration: 70000 }
         ]
@@ -37,7 +37,7 @@ let fakeServerData = {
       {
         name: 'Playlist - Now!',
         songs: [
-          { name: 'Beat It', duration: 1345 },
+          { name: 'EZ does it', duration: 1345 },
           { name: 'Fire', duration: 1236 },
           { name: 'Trouble will find me now', duration: 70000 }
         ]
@@ -49,7 +49,7 @@ let fakeServerData = {
 
 class App extends Component {
   constructor(props) {
-    super();
+    super(props);
     this.state = {
       serverData: fakeServerData
     }
@@ -62,18 +62,19 @@ class App extends Component {
   // }
 
   render() {
+    let playlistData = this.state.serverData.user.playlists;
+
     return (
       <div className="App">
         {this.state.serverData.user ?
           <div>
             <h1 className="App-title">{this.state.serverData.user && this.state.serverData.user.name}'s Playlist</h1>
-            <PlaylistCounter playlists={this.state.serverData.user.playlists} />
-            <HoursCounter playlists={this.state.serverData.user.playlists} />
+            <PlaylistCounter playlists={playlistData} />
+            <HoursCounter playlists={playlistData} />
             <Filter />
-            <Playlist />
-            <Playlist />
-            <Playlist />
-            <Playlist />
+            {playlistData.map(playlist =>
+              <Playlist playlists={playlist} />
+            )}
           </div> : <h1>Loading .....</h1>
         }
       </div>

@@ -2,14 +2,16 @@
 This app was created to display user Spotify playlists.
 
 ### FrontEnd
-* JavaScript,
-* React.JS,
-* Spotify Api,
+* JavaScript
+* React.JS
+* Spotify Api
 * Spotify Oauth
+* Bootstrap 4 with Bootswatch
 
 
 ### Backend
 * Node.JS
+* Express
 * Heroku
 
 ### Deployed to Heroku

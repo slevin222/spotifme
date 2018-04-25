@@ -47,10 +47,10 @@ input{
   text-align: center;
   top: 75%;
   left: 45%;
-  color: ghostwhite;
-  background-color: black;
+  /* color: ghostwhite;
+  background-color: black; */
   cursor: pointer;
-  box-shadow: 0px 0px 8px 8px #888888;
+  /* box-shadow: 0px 0px 8px 8px #888888; */
 }
 
 .homeImage{

@@ -83,11 +83,11 @@ class App extends Component {
         }) : []
 
     return (
-      <div className="App" >
+      <div className="App container-fluid " >
         {
           this.state.user ?
             <div>
-              <h1 className="App-title">{this.state.user.name}'s Playlist</h1>
+              <h1 className="App-title">{this.state.user.name}'s Playlists</h1>
               <PlaylistCounter playlists={showPlaylist} />
               <HoursCounter playlists={showPlaylist} />
               <Filter onTextChange={text => this.setState({ filterString: text })} />

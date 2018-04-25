@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Playlist from './Playlist';
 import Filter from './Filter';
 import PlaylistCounter from './PlaylistCounter';
-import HoursCounter from './HoursCounter';
 import SignIn from './SignIn';
 import '../index.css';
 import queryString from 'query-string';
@@ -87,13 +86,13 @@ class App extends Component {
         {
           this.state.user ?
             <div>
-              <h1 className="App-title">{this.state.user.name}'s Playlists</h1>
-              <PlaylistCounter playlists={showPlaylist} />
-              <HoursCounter playlists={showPlaylist} />
+              <PlaylistCounter playlists={showPlaylist} userName={this.state.user.name} />
               <Filter onTextChange={text => this.setState({ filterString: text })} />
-              {showPlaylist.map(playlist =>
-                <Playlist imageUrl={playlist.imageUrl} playlists={playlist} />
-              )}
+              <div className="row d-inline-flex align-items-start mt-4">
+                {showPlaylist.map(playlist =>
+                  <Playlist imageUrl={playlist.imageUrl} playlists={playlist} />
+                )}
+              </div>
             </div> :
             <SignIn />
         }

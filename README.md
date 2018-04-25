@@ -1,5 +1,5 @@
-# Spitifme
-This app was created to show more of you playlist details.
+# Spotifme
+This app was created to display user Spotify playlists.
 
 ### FrontEnd
 * JavaScript,
@@ -10,9 +10,10 @@ This app was created to show more of you playlist details.
 
 ### Backend
 * Node.JS
+* Heroku
 
 ### Deployed to Heroku
-(https://spotifme.herokuapp.com)
+https://spotifme.herokuapp.com
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

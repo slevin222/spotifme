@@ -6,26 +6,6 @@ body {
   
 }
 
-.aggregate{
-  display: inline-block;
-  width:  50%;
-  text-align: center;
-
-}
-
-.App-title{
-  text-align: center;
-  font-size: 45px;
-  margin-top: 2%;
-}
-
-.playlists{
-  width: 25%;
-  display: inline-block;
-  height: 25%;
-
-}
-
 .playlistTitle{
   font-size: 20px;
 }
@@ -41,9 +21,6 @@ body {
 }
 
 
-.form-control.is-valid{
-  width: 30%;
-}
 
 .signInBtn{
   position: absolute;

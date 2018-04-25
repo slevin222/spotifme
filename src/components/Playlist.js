@@ -7,7 +7,7 @@ class Playlist extends Component {
     render() {
         let playlist = this.props.playlists;
         return (
-            <div className="playlists mt-3">
+            <div className="col mt-2">
                 <div>
                     <img src={this.props.imageUrl} alt={this.props.imageUrl} style={{ width: '320px' }} />
                 </div>

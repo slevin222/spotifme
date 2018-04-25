@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: lightgrey;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   
 }
@@ -14,13 +13,10 @@ body {
 
 }
 
-.filter{
-  text-align: center;
-}
-
 .App-title{
   text-align: center;
   font-size: 45px;
+  margin-top: 2%;
 }
 
 .playlists{
@@ -30,14 +26,23 @@ body {
 
 }
 
+.playlistTitle{
+  font-size: 20px;
+}
+
+.plylistImage{
+  width:100%;
+}
+
+
 .App{
   height: 100%;
   width: 100%;
 }
 
-input{
-  height: 35px;
-  width: 250px;
+
+.form-control.is-valid{
+  width: 30%;
 }
 
 .signInBtn{
@@ -47,10 +52,7 @@ input{
   text-align: center;
   top: 75%;
   left: 45%;
-  /* color: ghostwhite;
-  background-color: black; */
   cursor: pointer;
-  /* box-shadow: 0px 0px 8px 8px #888888; */
 }
 
 .homeImage{

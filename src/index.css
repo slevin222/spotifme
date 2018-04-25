@@ -2,4 +2,40 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: lightgrey;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+
+.aggregate{
+  display: inline-block;
+  width:  50%;
+  text-align: center;
+
+}
+
+.filter{
+  text-align: center;
+}
+
+.App-title{
+  text-align: center;
+  font-size: 45px;
+}
+
+.playlists{
+  width: 25%;
+  display: inline-block;
+  height: 25%;
+
+}
+
+.App{
+  height: 100%;
+  width: 100%;
+}
+
+input{
+  height: 35px;
+  width: 250px;
 }

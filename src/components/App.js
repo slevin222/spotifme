@@ -3,7 +3,7 @@ import Playlist from './Playlist';
 import Filter from './Filter';
 import PlaylistCounter from './PlaylistCounter';
 import HoursCounter from './HoursCounter';
-import '../App.css';
+import '../index.css';
 import queryString from 'query-string';
 
 
@@ -46,8 +46,8 @@ class App extends Component {
         let allTracksDataPromises =
           Promise.all(trackDataPromises)
         let playlistsPromise = allTracksDataPromises.then(trackDatas => {
-          trackDatas.forEach((trackData, index) => {
-            playlists[index].trackDatas = trackData.items
+          trackDatas.forEach((trackData, i) => {
+            playlists[i].trackDatas = trackData.items
               .map(item => item.track)
               .map(trackData => ({
                 name: trackData.name,
@@ -63,9 +63,7 @@ class App extends Component {
           return {
             name: item.name,
             imageUrl: item.images[0].url,
-            songs: item.trackDatas.slice(0, 5).map(trackData => ({
-              name: trackData.name
-            }))
+            songs: item.trackDatas.slice(0, 5)
           }
         })
       }))
@@ -83,7 +81,7 @@ class App extends Component {
           let matchesSong = playlist.songs.find(song => song.name.toLowerCase()
             .includes(this.state.filterString.toLowerCase()))
           return matchesPlaylist || matchesSong
-        }) : [];
+        }) : []
 
     return (
       <div className="App" >

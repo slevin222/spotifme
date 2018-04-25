@@ -8,7 +8,7 @@ class Playlist extends Component {
         let playlist = this.props.playlists;
         return (
             <div className="playlists">
-                <img src={this.props.imageUrl} style={{ width: '120px' }} />
+                <img src={this.props.imageUrl} alt={this.props.imageUrl} style={{ width: '160px' }} />
                 <h3>{playlist.name}</h3>
                 <ul>
                     {playlist.songs.map(song =>

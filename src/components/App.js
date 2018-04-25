@@ -3,6 +3,7 @@ import Playlist from './Playlist';
 import Filter from './Filter';
 import PlaylistCounter from './PlaylistCounter';
 import HoursCounter from './HoursCounter';
+import SignIn from './SignIn';
 import '../index.css';
 import queryString from 'query-string';
 
@@ -95,13 +96,8 @@ class App extends Component {
               {showPlaylist.map(playlist =>
                 <Playlist imageUrl={playlist.imageUrl} playlists={playlist} />
               )}
-            </div> : <button onClick={() => {
-              window.location = window.location.href.includes('localhost')
-                ? 'http://localhost:8888/login'
-                : 'https://soptifme-backend.herokuapp.com/login'
-            }
-            }
-              style={{ padding: '20px', 'fontSize': '50px', 'marginTop': '20px' }}>Sign in with Spotify</button>
+            </div> :
+            <SignIn />
         }
       </div>
     );

@@ -88,7 +88,7 @@ class App extends Component {
             <div>
               <PlaylistCounter playlists={showPlaylist} userName={this.state.user.name} />
               <Filter onTextChange={text => this.setState({ filterString: text })} />
-              <div className="row d-inline-flex align-items-start mt-4">
+              <div className="d-flex flex-wrap mt-4">
                 {showPlaylist.map(playlist =>
                   <Playlist imageUrl={playlist.imageUrl} playlists={playlist} />
                 )}

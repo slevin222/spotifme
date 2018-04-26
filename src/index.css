@@ -14,13 +14,10 @@ body {
   width:100%;
 }
 
-
 .App{
   height: 100%;
   width: 100%;
 }
-
-
 
 .signInBtn{
   position: absolute;
@@ -37,4 +34,8 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
 
+}
+
+.card.border-success{
+  width: 100%;
 }

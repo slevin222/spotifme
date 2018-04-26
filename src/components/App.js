@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Playlist from './Playlist';
 import Filter from './Filter';
-import PlaylistCounter from './PlaylistCounter';
+import PlaylistInfo from './PlaylistInfo';
 import SignIn from './SignIn';
 import '../index.css';
 import queryString from 'query-string';
@@ -86,7 +86,7 @@ class App extends Component {
         {
           this.state.user ?
             <div>
-              <PlaylistCounter playlists={showPlaylist} userName={this.state.user.name} />
+              <PlaylistInfo playlists={showPlaylist} userName={this.state.user.name} />
               <Filter onTextChange={text => this.setState({ filterString: text })} />
               <div className="d-flex flex-wrap mt-4">
                 {showPlaylist.map(playlist =>

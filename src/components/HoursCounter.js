@@ -11,7 +11,7 @@ class HoursCounter extends Component {
         }, 0)
         return (
             <div className="aggregate" >
-                <h2>{totalDuration} Hours</h2>
+                <h2>{totalDuration} Hours of Music</h2>
             </div>
         )
     }

@@ -3,6 +3,7 @@ import Playlist from './Playlist';
 import Filter from './Filter';
 import PlaylistInfo from './PlaylistInfo';
 import SignIn from './SignIn';
+import VideoSearch from './VideoSearch';
 import '../index.css';
 import queryString from 'query-string';
 
@@ -87,6 +88,7 @@ class App extends Component {
           this.state.user ?
             <div>
               <PlaylistInfo playlists={showPlaylist} userName={this.state.user.name} />
+              <VideoSearch />
               <Filter onTextChange={text => this.setState({ filterString: text })} />
               <div className="d-flex flex-wrap mt-4">
                 {showPlaylist.map(playlist =>

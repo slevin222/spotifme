@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import YTSearch from 'youtube-api-search';
 
 
 
@@ -7,11 +6,6 @@ import YTSearch from 'youtube-api-search';
 
 class Playlist extends Component {
 
-
-    //example API search
-    // YTSearch({ key: API_KEY, term: 'surfboards' }, function (data) {
-    //     console.log(data);
-    // });
     render() {
         let playlist = this.props.playlists;
         return (

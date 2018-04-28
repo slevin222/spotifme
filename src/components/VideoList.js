@@ -12,9 +12,9 @@ const VideoList = (props) => {
     });
 
     return (
-        <div className="col-lg-7">
-            <div className="col-lg-12" >
-                <ul className="d-flex flex-wrap">
+        <div className="col-lg-12 col-sm-12">
+            <div className="col-lg-12" id="videoList">
+                <ul>
                     {videoItems}
                 </ul>
             </div>

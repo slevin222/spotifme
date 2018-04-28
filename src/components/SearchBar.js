@@ -10,13 +10,10 @@ class SearchBar extends Component {
 
     render() {
         return (
-            <div className="row ">
-                <div className="col-lg-4 col-md-12 m-4">
-                    <input className="form-control is-valid" placeholder="Input Song to Show Video" type="text"
-                        value={this.state.term}
-                        onChange={event => this.onInputChange(event.target.value)} />
-                    {/* Value of the input:{this.state.term} */}
-                </div>
+            <div className="col-lg-12 col-md-12 mb-4 mt-4">
+                <input className="form-control is-valid" placeholder="Input Song to Show Video" type="text"
+                    value={this.state.term}
+                    onChange={event => this.onInputChange(event.target.value)} />
             </div>
         );
     }

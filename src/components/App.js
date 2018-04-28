@@ -88,12 +88,19 @@ class App extends Component {
           this.state.user ?
             <div>
               <PlaylistInfo playlists={showPlaylist} userName={this.state.user.name} />
-              <VideoSearch />
-              <Filter onTextChange={text => this.setState({ filterString: text })} />
-              <div className="d-flex flex-wrap mt-4">
-                {showPlaylist.map(playlist =>
-                  <Playlist imageUrl={playlist.imageUrl} playlists={playlist} />
-                )}
+              <div className="row">
+                <VideoSearch playlists={showPlaylist} />
+                <div className="col-lg-6">
+                  <Filter onTextChange={text => this.setState({ filterString: text })} />
+
+                  <div className="col-lg-12 mt-4">
+                    <div className="d-flex flex-wrap mt-4">
+                      {showPlaylist.map(playlist =>
+                        <Playlist imageUrl={playlist.imageUrl} playlists={playlist} key={playlist.imageUrl} />
+                      )}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div> :
             <SignIn />

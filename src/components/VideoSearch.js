@@ -11,12 +11,11 @@ class ViedoSearch extends Component {
 
     constructor(props) {
         super(props);
-
         this.state = {
             selectedVideo: null,
             videos: []
         };
-        this.videoSearch('spotify');
+        this.videoSearch('how to create playlist spotify');
     }
 
     videoSearch(term) {
@@ -30,16 +29,15 @@ class ViedoSearch extends Component {
     }
 
     render() {
+        // console.log('props in viedolist', this.props.playlists[0].songs);
         const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 400)
         return (
-            <div>
+            <div className="col-lg-6">
                 <SearchBar onSearchTermChange={videoSearch} />
-                <div className="row">
-                    <VideoDetail video={this.state.selectedVideo} />
-                    <VideoList
-                        onVideoSelect={selectedVideo => this.setState({ selectedVideo })}
-                        videos={this.state.videos} />
-                </div>
+                <VideoDetail video={this.state.selectedVideo} />
+                <VideoList
+                    onVideoSelect={selectedVideo => this.setState({ selectedVideo })}
+                    videos={this.state.videos} />
             </div>
         );
     }

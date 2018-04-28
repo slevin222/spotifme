@@ -37,3 +37,15 @@ h2{
 .card.border-success{
   width: 100%;
 }
+
+ol{
+  padding: 3px;
+}
+
+ul{
+  padding: 0;
+}
+
+#videoList{
+  padding: 0;
+}

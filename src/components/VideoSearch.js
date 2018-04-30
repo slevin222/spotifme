@@ -29,7 +29,9 @@ class ViedoSearch extends Component {
     }
 
     render() {
-        // console.log('props in viedolist', this.props.playlists[0].songs);
+
+        console.log('props in viedolist', this.props.playlists);
+
         const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 400)
         return (
             <div className="col-lg-6">

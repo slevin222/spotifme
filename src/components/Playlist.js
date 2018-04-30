@@ -18,7 +18,7 @@ class Playlist extends Component {
                     <div className="card-body">
                         <ol>
                             {playlist.songs.map(song =>
-                                <li key={song.name}>{song.name}</li>
+                                <li key={song.name}><a>{song.name}</a></li>
                             )}
                         </ol>
                     </div>

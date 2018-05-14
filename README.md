@@ -1,11 +1,12 @@
 # Spotifme
-This app was created to display user Spotify playlists.
+This app was created to display user Spotify playlists along with the ability to play videos with the YouTube Api.
 
 ### FrontEnd
 * JavaScript
 * React.JS
 * Spotify Api
 * Spotify Oauth
+* YouTube Api
 * Bootstrap 4 with Bootswatch
 
 

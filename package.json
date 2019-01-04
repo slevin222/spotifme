@@ -15,6 +15,7 @@
     "react-dom": "^16.7.0",
     "react-scripts": "1.1.4",
     "url-parse": "^1.4.4",
+    "webpack-dev-server": "^3.1.14",
     "youtube-api-search": "0.0.5"
   },
   "scripts": {

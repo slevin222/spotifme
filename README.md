@@ -1,5 +1,5 @@
 # Spotifme
-This app was created to display user Spotify playlists along with the ability to play videos with the YouTube Api.
+This app was created with the Spotify API for user login to display the users Spotify playlists along with the ability to play videos via the YouTube Api.
 
 ### FrontEnd
 * JavaScript

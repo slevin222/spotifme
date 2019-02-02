@@ -7,7 +7,7 @@ This app was created with the Spotify API for user login to display the users Sp
 * Spotify Api
 * Spotify Oauth
 * YouTube Api
-* Bootstrap 4 with Bootswatch
+* Bootstrap with Bootswatch
 
 
 ### Backend
@@ -15,10 +15,10 @@ This app was created with the Spotify API for user login to display the users Sp
 * Express
 * Heroku
 
-### Deployed to Heroku
+### Working prototype deployed to Heroku
 https://spotifme.herokuapp.com
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This project started with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 

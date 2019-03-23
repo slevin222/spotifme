@@ -9,7 +9,7 @@ class Navbar extends Component {
                         ? 'http://localhost:8888/login'
                         : 'https://soptifme-backend.herokuapp.com/login'
                 }
-                } > Sign in with Spotify</button >
+                } > Log in with Spotify</button >
             </nav >
         )
     }
